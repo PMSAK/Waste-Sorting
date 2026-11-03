@@ -16,10 +16,6 @@ venv/
 # Dataset - avoid uploading the full dataset
 Data2/
 
-# Model checkpoints - ignore large files by default
-*.pth
-*.pt
-
 # Environment secrets
 .env
 
