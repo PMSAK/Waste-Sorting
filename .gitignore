@@ -1,0 +1,28 @@
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset - avoid uploading the full dataset
+Data2/
+
+# Model checkpoints - ignore large files by default
+*.pth
+*.pt
+
+# Environment secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
