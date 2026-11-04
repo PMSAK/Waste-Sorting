@@ -72,15 +72,11 @@ The confidence score represents the model's probability estimate and does not gu
 
 View the model's predictions across all supported waste categories, ranked from highest to lowest probability.
 
-### 4. Dataset Examples
-
-Explore example images from the dataset corresponding to the predicted categories.
-
-### 5. Interactive Web Interface
+### 4. Interactive Web Interface
 
 Use a Streamlit application to upload images and visualize predictions.
 
-### 6. Deep Learning Experiments
+### 5. Deep Learning Experiments
 
 Train and evaluate multiple pretrained architectures to compare their performance on waste classification.
 
@@ -121,7 +117,7 @@ The current application uses the following 10 categories:
 | NumPy | Numerical operations |
 | Pandas | Dataset organization and analysis |
 | Scikit-learn | Dataset splitting and evaluation metrics |
-| Matplotlib | Visualization and evaluation plots |
+| Matplotlib and Seaborn| Visualization and evaluation plots |
 | Git and GitHub | Version control and project collaboration |
 
 ---
@@ -181,12 +177,13 @@ The project follows the workflow below:
 
 The initial experiments used the RealWaste image classification dataset.
 
-Dataset link:
+Datasets link:
 
 https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2/
+https://www.kaggle.com/datasets/mostafaabla/garbage-classification
 
 
-The dataset contains images belonging to different waste categories and is suitable for image classification experiments.
+The datasets contains images belonging to different waste categories and is suitable for image classification experiments.
 
 The dataset was organized into class-specific folders.
 
@@ -223,7 +220,7 @@ The dataset preparation process included:
 6. Applying image preprocessing and augmentation.
 7. Preparing PyTorch datasets and dataloaders.
 
-The initial RealWaste dataset contained **4,752 images across 9 categories**.
+The initial RealWaste dataset contained **27773 images across 10 categories**.
 
 The dataset was split into:
 
@@ -240,7 +237,6 @@ Stratified splitting was used to maintain approximately the same class distribut
 
 The image preprocessing pipeline includes:
 
-- Converting images to RGB.
 - Resizing images to the input dimensions required by the pretrained model.
 - Converting images into PyTorch tensors.
 - Normalizing images using ImageNet statistics when using ImageNet pretrained weights.
@@ -518,11 +514,6 @@ https://github.com/PMSAK/Waste-Sorting
 
 ---
 
-##  License
-
-A license has not yet been specified for this repository.
-
-If you intend to make the project open source, consider adding an appropriate license file.
 
 ---
 
