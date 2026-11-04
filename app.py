@@ -400,9 +400,7 @@ Give waste a
 
 <p>
 Upload an image and let our trained ResNet50 model
-identify its waste category. Explore the model's
-predictions and compare them with examples from
-the dataset.
+identify its waste category.
 </p>
 </div>
 """,
@@ -491,43 +489,6 @@ if uploaded_file is not None:
         st.caption(
             "Confidence is the model's predicted probability, "
             "not a guarantee that the classification is correct."
-        )
-
-
-    # =====================================================
-    # ALL CATEGORY PROBABILITIES
-    # =====================================================
-
-    st.divider()
-
-    st.markdown("### What the model thinks")
-
-    st.caption(
-        "All categories ranked from highest to lowest probability."
-    )
-
-    for prediction in predictions:
-
-        category = prediction["Category"]
-
-        probability = prediction["Probability"]
-
-        percentage = probability * 100
-
-        if category == predicted_category:
-
-            st.markdown(
-                f"**🏆 {category.upper()} — {percentage:.2f}%**"
-            )
-
-        else:
-
-            st.markdown(
-                f"**{category.capitalize()} — {percentage:.2f}%**"
-            )
-
-        st.progress(
-            float(probability)
         )
 
 
